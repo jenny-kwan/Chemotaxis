@@ -49,7 +49,7 @@ class PacMan {
   void show() {
     fill(255, 255, 0);
     noStroke();
-    arc(x, y, size, size, radians(45), radians(315), PIE);
+    arc(x, y, size, size, radians(45), radians(315), PIE); // Use PIE for a filled arc
   }
 }
 
@@ -58,7 +58,6 @@ void setup() {
   background(backgroundColor);
   
   dots = new Dot[numDots];
-  
   for (int i = 0; i < numDots; i++) {
     dots[i] = new Dot();
   }
